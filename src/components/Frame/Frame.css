@@ -1,0 +1,5 @@
+.App-frame {
+  grid-column: 2;
+  border: 1px solid black;
+  min-width: 100%;
+}

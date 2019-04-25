@@ -6,7 +6,7 @@ const IFrame = ({ children, ...props }) => {
   const mountNode = contentRef && contentRef.contentWindow.document.body;
 
   return (
-    <iframe {...props} ref={setContentRef}>
+    <iframe title="my-iframe" {...props} ref={setContentRef}>
       {mountNode && createPortal(React.Children.only(children), mountNode)}
     </iframe>
   );

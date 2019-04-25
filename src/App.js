@@ -1,15 +1,14 @@
 import React from "react";
 import "./App.css";
-import IFrame from "./IFrame";
-import Content from "./Content";
+import Frame from "./components/Frame/Frame";
+import Panel from "./components/Panel/Panel";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">header</header>
-      <IFrame>
-        <Content />
-      </IFrame>
+      <header className="App-header">comms</header>
+      <Panel className="App-panel" />
+      <Frame className="App-frame" />
     </div>
   );
 }

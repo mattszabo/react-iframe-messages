@@ -1,0 +1,4 @@
+.App-panel {
+  grid-column: 1;
+  border: 1px solid black;
+}
