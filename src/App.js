@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">comms</header>
-      <Panel className="App-panel" />
-      <Frame className="App-frame" />
+      <div className="grid-layout">
+        <Panel className="App-panel content" />
+        <Frame className="App-frame content" />
+      </div>
     </div>
   );
 }

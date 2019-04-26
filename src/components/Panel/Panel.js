@@ -10,7 +10,18 @@ const Panel = ({ className }) => {
     } else {
       switch (event.data) {
         case "ready":
-          console.log("iframe is ready");
+          const cssLink = document.createElement("link");
+          cssLink.href = require("../../index.css");
+          cssLink.rel = "stylesheet";
+          cssLink.type = "text/css";
+          console.log(
+            "iframe is ready",
+            document.getElementById("my-iframe").contentDocument.head
+          );
+          document
+            .getElementById("my-iframe")
+            .contentDocument.head.appendChild(cssLink);
+          // document.getElementById("my-frame").contentDocument;
           break;
         default:
           console.log("couldn not handle message: ", event.data);
