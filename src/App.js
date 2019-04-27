@@ -1,7 +1,8 @@
 import React from "react";
-import "./App.css";
 import Frame from "./components/Frame/Frame";
 import Panel from "./components/Panel/Panel";
+import { withIframeMessageHandler } from "./handlers/messageHandlers";
+import "./App.css";
 
 function App() {
   return (
@@ -15,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default withIframeMessageHandler(App);
